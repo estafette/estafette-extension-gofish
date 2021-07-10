@@ -44,13 +44,13 @@ func (p *Params) SetDefaults(buildVersion, repoSource, repoOwner, repoName strin
 	}
 
 	if p.DarwinDownloadUrl == "" {
-		p.DarwinDownloadUrl = fmt.Sprintf("%v/releases/download/v%v/%v-v%v-darwin-amd64-zip", p.Repository, p.Version, p.Name, p.Version)
+		p.DarwinDownloadUrl = fmt.Sprintf("%v/releases/download/v%v/%v-v%v-darwin-amd64.zip", p.Repository, p.Version, p.Name, p.Version)
 	}
 	if p.LinuxDownloadUrl == "" {
-		p.LinuxDownloadUrl = fmt.Sprintf("%v/releases/download/v%v/%v-v%v-linux-amd64-zip", p.Repository, p.Version, p.Name, p.Version)
+		p.LinuxDownloadUrl = fmt.Sprintf("%v/releases/download/v%v/%v-v%v-linux-amd64.zip", p.Repository, p.Version, p.Name, p.Version)
 	}
 	if p.WindowsDownloadUrl == "" {
-		p.WindowsDownloadUrl = fmt.Sprintf("%v/releases/download/v%v/%v-v%v-windows-amd64-zip", p.Repository, p.Version, p.Name, p.Version)
+		p.WindowsDownloadUrl = fmt.Sprintf("%v/releases/download/v%v/%v-v%v-windows-amd64.exe.zip", p.Repository, p.Version, p.Name, p.Version)
 	}
 }
 
